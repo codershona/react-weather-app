@@ -4,7 +4,7 @@ import React from "react";
 
 const Weather = (props) => {
 	return (
-		<div className="container">
+		<div className="container text-light">
 		 <div className="cards pt-4">
            <h1>
            {props.city}

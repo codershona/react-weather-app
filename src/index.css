@@ -11,6 +11,9 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 
+  /*background height*/
+    height: 770px;
+
 }
 
 code {
