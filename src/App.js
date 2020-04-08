@@ -11,8 +11,12 @@ const API_key = "478cc3c9e7cd7db831d6f004db3d70f7";
 class App extends React.Component {
  constructor() {
   super();
-  this.state = {};
+  this.state = {
+    city: undefined,
+    country: undefined
+  };
   this.getWeather();
+
 
  }
 
@@ -23,6 +27,11 @@ class App extends React.Component {
 
    console.log(response);
 
+   this.setState({
+    city: response.name,
+    country: response.sys.country
+   })
+
 
  };
 
@@ -30,7 +39,7 @@ class App extends React.Component {
     return (
   <div className="App">
       
-      <Weather />
+      <Weather city={this.state.city} country={this.state.country} />
 
     </div>
 
