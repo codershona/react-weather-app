@@ -14,14 +14,14 @@ const Weather = (props) => {
              <i className="wi wi-day-sunny display-1"/>
            </h5>
 
-           <h1 className="py-2">25&deg;</h1>
+           <h1 className="py-2">{props.temp_celcius}&deg;</h1>
 
       
        {/** showing max and min temparature **/}
 
-       {minmaxTemp(24, 19)}
+       {minmaxTemp(props.temp_min, props.temp_max)}
 
-       <h4 className="py-3">Little Rain</h4>
+       <h4 className="py-3">{props.description}</h4>
 
 
 
