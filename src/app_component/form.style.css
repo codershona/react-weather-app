@@ -11,3 +11,11 @@ form input[name="country"] {
 	border-radius: 0;
 
 }
+
+
+form input:focus {
+	background-color: transparent;
+	box-shadow: none !important;
+
+	
+}

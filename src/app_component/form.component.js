@@ -6,7 +6,7 @@ const Form = props => {
    
    return (
       <div className="container">
-       <form>
+       <form onSubmit={props.loadweather}>
 
           <div className="row">         
            <div className="col-md-3 offset-md-2">
