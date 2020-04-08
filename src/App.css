@@ -2,3 +2,13 @@
   text-align: center;
 }
 
+
+/* icon size larger method */
+
+h5.py-4 {
+	font-size: 94px;
+}
+
+button.btn.btn-warning {
+	margin-top: 8px;
+}

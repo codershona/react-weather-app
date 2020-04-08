@@ -40,8 +40,8 @@ function minmaxTemp(min, max) {
 
 				<h3>
 		  <span className="px-4">{min}&deg;</span>
-
-		  <span className="px-4">{max}&deg;</span>
+            <br/>
+		  <span className="px-4 px">{max}&deg;</span>
 
 		</h3>
 
