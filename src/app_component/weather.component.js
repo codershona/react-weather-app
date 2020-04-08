@@ -7,15 +7,16 @@ const Weather = (props) => {
 		<div className="container">
 		 <div className="cards pt-4">
            <h1>
-           {props.city}, {props.country}
+           {props.city}
            </h1>
 
            <h5 className="py-4">
              <i className={`wi ${props.weatherIcon} display-1`}/>
            </h5>
 
-           <h1 className="py-2">{props.temp_celcius}&deg;</h1>
-
+           { props.temp_celcius ? (
+           	<h1 className="py-2">{props.temp_celcius}&deg;</h1>):null
+           }
       
        {/** showing max and min temparature **/}
 
