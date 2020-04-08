@@ -6,7 +6,7 @@ const Weather = () => {
 	return (
 		<div className="container">
 		 <div className="cards">
-           <h1>New York</h1>
+           <h1>London</h1>
 
            <h5 className="py-4">
              <i className="wi wi-day-sunny display-1"/>
