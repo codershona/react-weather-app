@@ -22,6 +22,7 @@ class App extends React.Component {
     temp_max: undefined,
     temp_min: undefined,
     description: "",
+   
     error: false
 
   };
@@ -96,8 +97,15 @@ class App extends React.Component {
    
     e.preventDefault();
 
+    const city = e.target.elements.city.value;
 
-  const api_call = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=${API_key}`);
+    const country = e.target.elements.country.value;
+
+     if(city && country) {
+      const api_call = await fetch(
+    `http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${API_key}`
+
+  );
 
    const response = await api_call.json();
 
@@ -115,6 +123,9 @@ class App extends React.Component {
 
    this.get_WeatherIcon(this.weatherIcon,response.weather[0].id);
 
+   } else {
+    this.setState({error: true});
+   }
 
  };
 
@@ -122,7 +133,7 @@ class App extends React.Component {
     return (
   <div className="App">
 
-      <Form loadweather={this.getWeather} />
+      <Form loadweather={this.getWeather} error={this.state.error} />
 
 
       

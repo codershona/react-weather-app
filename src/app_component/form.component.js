@@ -6,6 +6,12 @@ const Form = props => {
    
    return (
       <div className="container">
+        
+
+        <div>
+         {props.error ? error(): null}
+        </div>
+
        <form onSubmit={props.loadweather}>
 
           <div className="row">         
@@ -44,6 +50,17 @@ const Form = props => {
    	);
 
 };
+
+
+function error() {
+	return (
+		  <div className="alert alert-danger mx-5" role="alert">
+		     PLEASE ENTER YOUR CITY OR COUNTRY
+		  </div>
+
+
+		);
+}
 
 
 
