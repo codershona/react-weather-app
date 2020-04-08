@@ -1,4 +1,5 @@
-import React from 'react';
+import React from "react";
+
 
 
 const Weather = () => {
@@ -6,6 +7,10 @@ const Weather = () => {
 		<div className="container">
 		 <div className="cards">
            <h1>New York</h1>
+
+           <h5 className="py-4">
+             <i className="wi wi-day-sunny"></i>
+           </h5>
 
 		 </div>
 		 </div>
