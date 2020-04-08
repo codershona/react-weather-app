@@ -5,15 +5,28 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "weather-icons/css/weather-icons.css";
 
 
+// api.openweathermap.org/data/2.5/weather?q=London,uk
+const API_key = "478cc3c9e7cd7db831d6f004db3d70f7";
 
-function App() {
-  return (
-    <div className="App">
+class App extends React.Component {
+ constructor() {
+  super();
+ }
+
+  render() {
+    return (
+  <div className="App">
       
       <Weather />
 
     </div>
-  );
+
+
+      );
+  }
+
 }
 
-export default App;
+
+export default App ;
+

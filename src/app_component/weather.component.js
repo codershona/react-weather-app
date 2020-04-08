@@ -19,6 +19,8 @@ const Weather = () => {
 
        {minmaxTemp(24, 19)}
 
+       <h4 className="py-3">Little Rain</h4>
+
 
 
 		 </div>
@@ -33,7 +35,7 @@ function minmaxTemp(min, max) {
 	return (
 		<h3>
 		  <span className="px-4">{min}&deg;</span>
-		  
+
 		  <span className="px-4">{max}&deg;</span>
 
 		</h3>
