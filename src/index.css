@@ -5,6 +5,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* background images added style method   */
+  background: url('./assets/weather.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+
 }
 
 code {
