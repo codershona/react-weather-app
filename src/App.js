@@ -29,7 +29,7 @@ class App extends React.Component {
 }
 
   calCelsius(temp) {
-    let cell = temp - 273.15
+    let cell = Math.floor(temp - 273.15);
     return cell;
 
   }
@@ -46,7 +46,7 @@ class App extends React.Component {
    this.setState({
     city: response.name,
     country: response.sys.country,
-    celsius: response.main.temp
+    celsius: this.calCelsius(response.main.temp)
    });
 
 
