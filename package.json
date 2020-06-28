@@ -1,5 +1,5 @@
 {
-  "homepage": " https://codershona.github.io/react-weather-app/",
+  "homepage": "https://codershona.github.io/react-weather-app/",
   "name": "react-weather-app",
   "version": "0.1.0",
   "private": true,
@@ -8,7 +8,6 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "bootstrap": "^3.3.7",
-    "gh-pages": "^3.1.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
@@ -36,8 +35,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "gh-pages": "^2.1.1"
   }
 }
