@@ -3,6 +3,18 @@
 
 ### PROJECT COULD BE FOUND HERE : https://codershona.github.io/react-weather-app/
 
+### To check this Please see instructions below:
+
+```
+       * Clone the repository;
+       
+        * Run npm install;
+        
+          * Run npm start;
+          
+
+```
+
 #### BUILDED BY : 
 
 * NOTES :
